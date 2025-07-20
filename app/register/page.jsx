@@ -17,7 +17,7 @@ import Navbar from "@/components/navbar"
 import { useToast } from "@/hooks/use-toast"
 
 // CronoTag ABI - this should be the ABI of your deployed contract
-import cronoTagABI from '../abis/CronoTag.json';
+import chronoTagABI from '../abis/ChronoTag.json';
 
 // Contract address - replace with your deployed contract address
 const contractAddress = process.env.NEXT_PUBLIC_CONTRACT_ADDRESS
@@ -121,7 +121,7 @@ export default function RegisterPage() {
       const signer = provider.getSigner()
 
       // Create contract instance
-      const contract = new ethers.Contract(contractAddress, CronoTagABI, signer)
+      const contract = new ethers.Contract(contractAddress, chronoTagABI, signer)
 
       const tx = await contract.registerIP(
         formData.authors,

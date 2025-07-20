@@ -14,7 +14,7 @@ import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
 import { Alert, AlertDescription } from "@/components/ui/alert"
 
-import contractABI from "../abis/CronoTag.json"
+import contractABI from "../abis/ChronoTag.json"
 const contractAddress = process.env.NEXT_PUBLIC_CONTRACT_ADDRESS
 
 export default function SearchPage() {
